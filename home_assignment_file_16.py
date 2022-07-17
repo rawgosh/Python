@@ -1,0 +1,45 @@
+#ASSIGNMENT
+
+#Write a function in python to read the content from a text file "poem.txt" line by line and display the same on screen.
+
+#This poem was copied from google.
+poem = open("poem.txt","w")
+poem.write("*** If **\n")
+poem.write("\t\t\t\t BY RUDYARD KIPLING\n")
+poem.write("\n")
+poem.write("If you can keep your head when all about you\n")
+poem.write("Are losing theirs and blaming it on you, \n")
+poem.write("If you can trust yourself when all men doubt you,\n")
+poem.write("But make allowance for their doubting too; \n")
+poem.write("If you can wait and not be tired by waiting,\n")
+poem.write("Or being lied about, don’t deal in lies,\n")
+poem.write("Or being hated, don’t give way to hating,\n")
+poem.write("And yet don’t look too good, nor talk too wise:\n")
+poem.write("\n")
+poem.write("If you can dream—and not make dreams your master;  \n")
+poem.write("If you can think—and not make thoughts your aim; \n")
+poem.write("If you can meet with Triumph and Disaster\n")
+poem.write("And treat those two impostors just the same; \n")
+poem.write("If you can bear to hear the truth you’ve spoken\n")
+poem.write("Twisted by knaves to make a trap for fools,\n")
+poem.write("Or watch the things you gave your life to, broken,\n")
+poem.write("And stoop and build ’em up with worn-out tools:\n")
+poem.write("\n")
+poem.write("If you can make one heap of all your winnings\n")
+poem.write("And risk it on one turn of pitch-and-toss,\n")
+poem.write("And lose, and start again at your beginnings\n")
+poem.write("And never breathe a word about your loss;\n")
+poem.write("If you can force your heart and nerve and sinew\n")
+poem.write("To serve your turn long after they are gone,\n")
+poem.write("And so hold on when there is nothing in you\n")
+poem.write("Except the Will which says to them: ‘Hold on!’\n")
+poem.write("\n")
+poem.write("\n")
+poem.write("\n")
+
+poem.close()
+
+poem = open("poem.txt","r")
+for line in poem:
+    print(line)
+poem.close()
